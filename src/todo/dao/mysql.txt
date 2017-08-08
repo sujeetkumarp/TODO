@@ -1,0 +1,15 @@
+1)
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '';
+restart mysql
+
+2)
+if dose not work
+xampp->mysql ke samne config->my.ini
+if no # in front of bind-address = 127.0.0.1 then put # like below
+#bind-address = 127.0.0.1 
+restart mysql
+
+
+3)
+if dose not work
+windows firewall exception allow port 3306

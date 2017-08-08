@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="367.0" style="-fx-background-color: rgb(200,255,200);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todo.UpdateTaskFXMLController">
+   <children>
+      <TextField fx:id="txtDueDate" layoutX="58.0" layoutY="282.0" minHeight="40.0" prefHeight="25.0" prefWidth="269.0" promptText="Due Date dd/MM/yyyy" />
+      <TextArea fx:id="taMsg" editable="false" layoutX="55.0" layoutY="84.0" prefHeight="107.0" prefWidth="269.0" promptText="MSG" />
+      <ComboBox fx:id="cmbCrFor" layoutX="53.0" layoutY="28.0" minHeight="40.0" prefHeight="25.0" prefWidth="266.0" promptText="Task For" />
+      <Button fx:id="btnAdd" layoutX="55.0" layoutY="466.0" mnemonicParsing="false" onAction="#he" prefHeight="40.0" prefWidth="266.0" style="-fx-background-color: rgb(120,80,10);" text="Update">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Comic Sans MS Bold" size="21.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#99ab12" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="btnBack" layoutX="53.0" layoutY="528.0" mnemonicParsing="false" onAction="#he" prefHeight="40.0" prefWidth="266.0" style="-fx-background-color: rgb(120,80,10);" text="Back">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Comic Sans MS Bold" size="21.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#99ab12" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <ComboBox fx:id="cmbStatus" layoutX="55.0" layoutY="404.0" minHeight="40.0" prefHeight="25.0" prefWidth="266.0" promptText="Status" />
+      <ComboBox fx:id="cmbPriority" layoutX="55.0" layoutY="344.0" minHeight="40.0" prefHeight="25.0" prefWidth="266.0" promptText="Priority" />
+      <TextArea fx:id="taMsg1" layoutX="54.0" layoutY="202.0" prefHeight="69.0" prefWidth="269.0" promptText="Your MSG" />
+   </children>
+</AnchorPane>

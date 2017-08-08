@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: rgb(255,230,230);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todo.SearchUserFXMLController">
+   <children>
+      <Label layoutX="65.0" layoutY="7.0" text="Users">
+         <effect>
+            <DropShadow>
+               <input>
+                  <Reflection />
+               </input>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="Chiller" size="74.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#fc0d0d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="btnBack" cancelButton="true" layoutX="48.0" layoutY="471.0" minHeight="60.0" mnemonicParsing="false" onAction="#he" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: tan;" text="Back">
+         <font>
+            <Font name="Californian FB Bold" size="30.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#c64040" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <TableView fx:id="tblList" layoutX="240.0" layoutY="28.0" prefHeight="656.0" prefWidth="728.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnDel" layoutX="49.0" layoutY="394.0" minHeight="60.0" mnemonicParsing="false" onAction="#he" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: tan;" text="Delete">
+         <font>
+            <Font name="Californian FB Bold" size="30.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#c64040" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <TextField fx:id="txtSi" layoutX="49.0" layoutY="268.0" minHeight="40.0" onKeyReleased="#kr" promptText="Search" />
+      <ComboBox fx:id="cmbSc" layoutX="48.0" layoutY="215.0" minHeight="40.0" onAction="#cmbHe" prefWidth="150.0" promptText="Column Name" />
+      <Button fx:id="btnAdd" layoutX="48.0" layoutY="317.0" minHeight="60.0" mnemonicParsing="false" onAction="#he" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: tan;" text="Add">
+         <font>
+            <Font name="Californian FB Bold" size="30.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#c64040" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="btnExit" cancelButton="true" layoutX="48.0" layoutY="544.0" minHeight="60.0" mnemonicParsing="false" onAction="#he" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: tan;" text="Exit">
+         <font>
+            <Font name="Californian FB Bold" size="30.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#c64040" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+   </children>
+</AnchorPane>
